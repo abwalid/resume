@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Me</title>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+		
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+		
+		*{margin: 0; padding: 0}
+		#header_wrap{
+		width:100%;
+		height:110px;
+		position: fixed;
+		top: 0;
+		background-color: white;
+		margin:0 auto;
+			}
+			#navbar{
+				width: 1250px;
+				height: 110px;
+				margin: 0 auto;
+			}
+		#logo a{
+		text-decoration: none;
+		color: blue;
+		font-weight: 900;
+		font-size: 36px;
+		float: left;
+		padding-top:25px;
+		}
+		#nav_wrap{
+		float: right;
+		}
+		#nav_wrap ul{
+		list-style: none;
+		}
+		#nav_wrap ul li{
+		float: left;
+		color:white;
+		font-weight: 600;
+		padding: 40px 30px;
+		text-decoration: none;
+		}
+		#nav_wrap ul li:last-child{
+		padding-right: 0;
+		}
+		#nav_wrap nav ul li a{
+		text-decoration: none;
+		color:#17171A;
+		font-size:16px;
+		transition: none;
+		display: block;
+		font-family: 'Gilroy';
+		font-style: normal;
+		}
+		#nav_wrap nav ul li a:hover{
+		background: linear-gradient(98.56deg, #6E0BD4 4.04%, #5519D4 13.82%, #3E27D4 22.22%, #2C30D4 32.24%, #2047CE 41.93%, #1B56C9 50.26%, #1761C6 59.87%, #1075C0 68.84%, #098ABA 78.21%, #039AB5 88.07%, #01A2B3 98.62%), #17171A;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		}
+		
+		#contact_me{
+			
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 120px;
+		}
+		#img{
+			float: left;
+			width: 50%;
+		}
+		#form{
+			float: right;
+			width: 50%;
+		}
+		#text_box_s{
+		width: 200px;
+			padding: 18px 0px 18px 20px;
+			background: #F2F3F5;
+		border-radius: 10px;
+		border: none;
+		}
+		input{
+			font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		color: #49494D;
+		}
+		
+		#text_box_m{
+			width: 444px;
+		padding: 18px 0px 18px 20px;
+			background: #F2F3F5;
+		border-radius: 10px;
+		border: none;
+		margin-top: 24px;
+			
+		}
+		#text_box_l{
+		padding: 18px 0px 18px 20px;
+		width: 444px;
+		height: 100px;
+			background: #F2F3F5;
+		border-radius: 10px;
+		border: none;
+		margin-top: 24px;
+		}
+		textarea{
+			background: #F2F3F5;
+		border-radius: 10px;
+		border: none;
+		margin-top: 24px;
+		width: 444px;
+		padding: 18px 0px 18px 20px;
+		width: fixed;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		color: #49494D;
+		}
+		#button{
+			margin-top: 24px;
+			width: 464px;
+			height: 55px;
+			background: linear-gradient(100.94deg, #6E0BD4 1.01%, #5519D4 11.12%, #3E27D4 19.8%, #2C30D4 30.16%, #2047CE 40.18%, #1B56C9 48.79%, #1761C6 58.72%, #1075C0 68%, #098ABA 77.68%, #039AB5 87.87%, #01A2B3 98.79%);
+		border-radius: 10px;
+		border: none;
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		color: #FFFFFF;
+		}
+		form a {
+			display: inline-block;
+			margin-top: 24px;
+			background: linear-gradient(100.94deg, #6E0BD4 1.01%, #5519D4 11.12%, #3E27D4 19.8%, #2C30D4 30.16%, #2047CE 40.18%, #1B56C9 48.79%, #1761C6 58.72%, #1075C0 68%, #098ABA 77.68%, #039AB5 87.87%, #01A2B3 98.79%);
+		border-radius: 10px;
+			padding-top: 18px;
+			padding-bottom: 18px;
+			margin: 0 auto;
+			text-align: center;
+			width: 464px;
+			font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		color: #FFFFFF;
+		text-decoration: none;
+		}
+		#heading{
+			width: 1250px;
+			background-color: blue;
+			background: red;
+			margin: 0 auto;
+			margin-top: 110px;
+			text-align: center;
+			background: linear-gradient(100.94deg, rgba(110, 11, 212, 0.1) 1.01%, rgba(85, 25, 212, 0.1) 11.12%, rgba(62, 39, 212, 0.1) 19.8%, rgba(44, 48, 212, 0.1) 30.16%, rgba(32, 71, 206, 0.1) 40.18%, rgba(27, 86, 201, 0.1) 48.79%, rgba(23, 97, 198, 0.1) 58.72%, rgba(16, 117, 192, 0.1) 68%, rgba(9, 138, 186, 0.1) 77.68%, rgba(3, 154, 181, 0.1) 87.87%, rgba(1, 162, 179, 0.1) 98.79%);
+		mix-blend-mode: normal;
+		border-radius: 20px;
+		}
+		#heading h1{
+			font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 32px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: #1885F2;
+		}
+		#footer{
+		width: 100%;
+		background-color: #EDEFF0;
+		margin: 0 auto;
+		margin-top: 150px;
+		display: inline-block;
+		}
+		#footer p{
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		color: #49494D;
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="header_wrap">
+			<div id="navbar">
+				<div id="logo">
+					<a href="index.html"><object data="abwalid.svg" type="image/svg+xml"> </object> </a>
+				</div>
+				<div id="nav_wrap">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</li>
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="index.html">Family</a></li>
+							<li><a href="index.html">Academic</a></li>
+							<li><a href="index.html">Hobby</a></li>
+							<li><a href="#" style="color: #1885F2;" >Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div id="heading">
+			<h1>Contact Me</h1>
+		</div>
+		<div id="contact_me">
+			
+			<div id="img">
+				<img style="margin-left: 60px; margin-top: 25px;" src="contact.png">
+			</div>
+			<div id="form">
+				<form style="margin-left: 100px;" action="/action_page.php">
+					<input type="text" id="text_box_s" name="fname" style="margin-right: 20px;" value="First Name">
+					<input type="text" id="text_box_s" name="lname" value="Last Name"><br>
+					<input type="text" id="text_box_m" name="lname" value="Email Address"><br>
+					<input type="text" id="text_box_m" name="lname" value="Subject"><br>
+					<textarea rows= "4" cols="200" type="text" name="input" style="margin-bottom: 20px;" >Write Your Message...
+					</textarea><br>
+					<a href="#">Send Message</a>
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&copy;abwalid 2023, All right reserved.</p>
+		</div>
+	</body>
+</html>
